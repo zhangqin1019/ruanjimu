@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title></title>
+    <link type="text/css" rel="stylesheet" href="../css/normalize.css"/>
+    <link type="text/css" rel="stylesheet" href="../css/软积木.css"/>
+    <script type="text/javascript" src="../js/软积木.js"></script>
+</head>
+<body>
+<div id="contain">
+    <nav><!--头部导航-->
+        <div id="nav-content">
+            <img src="../images/title.gif"/>
+            <span class="move">首页
+            <div class="scroll"></div>
+            </span>
+            <span class="move" id="kinds">分类
+                <div class="scroll"></div>
+                <div id="hide" hidden>
+                    <div id="icons"></div>
+                    <div id="hide-content">
+                        <div class="hide-one">
+                            <p>通用软件</p>
+                            <a href="javascript:void(0);">数据分析</a>
+                            <a href="javascript:void(0);">表单管理</a>
+                            <a href="javascript:void(0);">ERP</a>
+                            <a href="javascript:void(0);">进销存</a>
+                            <a href="javascript:void(0);">OA办公</a>
+                            <a href="javascript:void(0);">财务管理</a>
+                            <a href="javascript:void(0);">企业管理</a>
+                            <a href="javascript:void(0);">各类控件</a>
+                            <a href="javascript:void(0);">项目开发</a>
+                            <a href="javascript:void(0);">其他</a>
+                        </div>
+                        <div class="hide-one" style="height: 100px;">
+                            <p>行业应用</p>
+                                <a href="javascript:void(0);">影音播放</a>
+                                <a href="javascript:void(0);">商超零售</a>
+                                <a href="javascript:void(0);">餐饮娱乐</a>
+                                <a href="javascript:void(0);">旅游</a>
+                                <a href="javascript:void(0);">其他</a>
+                        </div>
+                        <div class="hide-one">
+                            <p>互联网+</p>
+                                <a href="javascript:void(0);">视频会议</a>
+                                <a href="javascript:void(0);">网络办公</a>
+                                <a href="javascript:void(0);">采用分析</a>
+                                <a href="javascript:void(0);">远程监控</a>
+                                <a href="javascript:void(0);">支付应用</a>
+                                <a href="javascript:void(0);">社交通讯</a>
+                                <a href="javascript:void(0);">微信应用</a>
+                                <a href="javascript:void(0);">电子商务</a>
+                                <a href="javascript:void(0);">社交应用</a>
+                        </div>
+                        <div class="hide-one" style="height: 100px;border-bottom: none;">
+                            <p>游戏娱乐</p>
+                                <a href="javascript:void(0);">消除类</a>
+                                <a href="javascript:void(0);">卡牌类</a>
+                                <a href="javascript:void(0);">射击类</a>
+                                <a href="javascript:void(0);">动作类</a>
+                                <a href="javascript:void(0);">其他</a>
+                        </div>
+                    </div>
+                </div>
+            </span>
+            <span class="move">软件市场
+                <div class="scroll"></div>
+            </span>
+            <span class="move">精品软件
+                <div class="scroll"></div>
+            </span>
+            <span class="move">搭积木
+                <div class="scroll"></div>
+            </span>
+            <span class="move">特色
+                <div class="scroll"></div>
+            </span>
+            <input type="search" name="search" id="search" hidden/>
+            <div id="sousuo" hidden></div>
+            <a href="javascript:void(0);" class="first">注册
+                <div id="book"></div>
+            </a>
+            <a href="javascript:void(0);" class="second">登录</a>
+        </div>
+    </nav>
+    <div id="total">
+        <div id="total-content">
+            <div id="banner"><!--banner图部分-->
+                <div id="kong">
+                    <div id="banner-content">
+                        <h1>快速匹配软件  软积木心体验</h1>
+                        <p>
+                            <a href="javascript:void(0);">ERP</a>
+                            <a href="javascript:void(0);">进销存</a>
+                            <a href="javascript:void(0);">OA办公</a>
+                            <a href="javascript:void(0);">影音播放</a>
+                            <a href="javascript:void(0);">商超零售</a>
+                            <a href="javascript:void(0);">餐饮娱乐</a>
+                            <a href="javascript:void(0);">旅游其他</a>
+                        </p>
+                        <input type="text" name="sea" id="sea"/><a href="javascript:void(0);" id="a"></a>
+                    </div>
+                </div>
+            </div>
+            <div id="main">
+                <div id="main-content">
+                    <div id="part1">
+                        <img src="../images/banner.gif"/>
+                        <h1>软件选型</h1>
+                        <a href="javascript:void(0);" class="yuan">考勤管理<div class="tu" hidden>√</div></a>
+                        <a href="javascript:void(0);" class="yuan">订单管理<div class="tu" hidden>√</div></a>
+                        <a href="javascript:void(0);" class="yuan">商品管理<div class="tu" hidden>√</div></a>
+                        <a href="javascript:void(0);" class="yuan">客户管理<div class="tu" hidden>√</div></a>
+                        <a href="javascript:void(0);" class="yuan">采购管理<div class="tu" hidden>√</div></a>
+                        <a href="javascript:void(0);" class="yuan">仓库管理<div class="tu" hidden>√</div></a>
+                        <a href="javascript:void(0);" class="yuan">销售管理<div class="tu" hidden>√</div></a>
+                        <a href="javascript:void(0);" class="yuan">权限管理<div class="tu" hidden>√</div></a>
+                        <a href="javascript:void(0);" class="yuan">微信支付<div class="tu" hidden>√</div></a>
+                        <a href="javascript:void(0);" class="yuan">银联支付<div class="tu" hidden>√</div></a>
+                        <a href="javascript:void(0);" class="yuan">百度支付<div class="tu" hidden>√</div></a>
+                        <a href="javascript:void(0);" class="yuan">财付通支付<div class="tu" hidden>√</div></a>
+                        <a href="javascript:void(0);" class="yuan">二维码支付<div class="tu" hidden>√</div></a>
+                        <a href="javascript:void(0);" class="yuan">用户管理<div class="tu" hidden>√</div></a>
+                        <a href="javascript:void(0);" class="yuan">会员管理<div class="tu" hidden>√</div></a>
+                        <a href="javascript:void(0);" class="yuan">财务管理<div class="tu" hidden>√</div></a>
+                        <a href="javascript:void(0);" id="more" class="yuan">更多模块<div class="tu" hidden>√</div></a>
+                        <a href="javascript:void(0);" id="sure" class="yuan">确定<div class="tu" hidden>√</div></a>
+                    </div>
+                    <div id="part2">
+                        <h2>精品软件<a href="javascript:void(0);">精品库</a></h2>
+                        <dl>
+                            <dt><img src="../images/jingpin1.gif"/></dt>
+                            <dd>
+                                <a href="javascript:void(0);">任我行协同CRM</a><br/>
+                                <span class="word">任我行协同版CRM系统集CRM、OA、OM、HR、KM一体化。通过建立组织运营管理铁三</span><br/>
+                                <p><span>CRM</span> <span class="right"><span>1</span> 人气 / <span>21</span> 评论</span></p>
+                            </dd>
+                        </dl>
+                        <dl>
+                            <dt><img src="../images/jingpin2.gif"/></dt>
+                            <dd>
+                                <a href="javascript:void(0);">百会快OA</a><br/>
+                                <span class="word">百会快OA基于全球知名的云开发平台（百会创造者）和云商业智能报表系统（百会报表），</span><br/>
+                                <p><span>ERP</span> <span class="right"><span>1</span> 人气 / <span>7</span> 评论</span></p>
+                            </dd>
+                        </dl>
+                        <dl>
+                            <dt><img src="../images/jingpin3.gif"/></dt>
+                            <dd>
+                                <a href="javascript:void(0);">协众OA政务版</a><br/>
+                                <span class="word">协众OA政务版为政府及单位提供便捷，简单易用的无纸化办公系统。让各部门迅速实现信息</span><br/>
+                                <p><span>ERP</span> <span class="right"><span>1</span> 人气 / <span>8</span>评论</span> </p>
+                            </dd>
+                        </dl>
+                        <dl>
+                            <dt><img src="../images/jingpin4.gif"/></dt>
+                            <dd>
+                                <a href="javascript:void(0);">协众OA增强版</a><br/>
+                                <span class="word">协众OA办公系统增强版版是针对中大型企业而提供的协同管理平台，支持本地服务器和云主</span><br/>
+                                <p><span>CRM</span> <span class="right"><span>1</span> 人气 / <span>7</span> 评论</span></p>
+                            </dd>
+                        </dl>
+                    </div>
+                    <div id="part3">
+                        <p>
+                            <a href="javascript:void(0);" id="ahover">最新上架</a>
+                            <a href="javascript:void(0);" id="ahover1">最受欢迎</a>
+                            <a href="javascript:void(0);">换一换</a>
+                        </p>
+                        <div class="one" id="one">
+                            <div id="icon"></div>
+                            <div class="icon-content">
+                                <dl>
+                                    <dt><img src="../images/new1.gif"></dt>
+                                    <dd>
+                                        <span class="a-content">格瑞趋势数据库版本控制</span><br/>
+                                        <span class="a-num">￥10000.00</span><br/>
+                                        <span class="a-content1">Source Safe for SQL Server是一...</span><br/>
+                                        <span class="a-content2">已有 0 评价</span>
+                                    </dd>
+                                </dl>
+                                <dl>
+                                    <dt><img src="../images/new2.gif"></dt>
+                                    <dd>
+                                        <span class="a-content">格瑞趋势数据库诊断专家</span><br/>
+                                        <span class="a-num">￥1500.00 </span><br/>
+                                        <span class="a-content1">Expert for SQL Server从服务器软硬件...</span><br/>
+                                        <span class="a-content2">已有 0 评价</span>
+                                    </dd>
+                                </dl>
+                                <dl>
+                                    <dt><img src="../images/new3.gif"></dt>
+                                    <dd>
+                                        <span class="a-content">伙伴云表格</span><br/>
+                                        <span class="a-word">免费</span><br/>
+                                        <span class="a-content1">伙伴云表格，快速实现Excel数据文件的云端化，一分钟平...</span><br/>
+                                        <span class="a-content2">已有 0 评价</span>
+                                    </dd>
+                                </dl>
+                                <dl>
+                                    <dt><img src="../images/new4.jpg"></dt>
+                                    <dd>
+                                        <span class="a-content">火凤凰CRM系统普及版</span><br/>
+                                        <span class="a-word">免费</span><br/>
+                                        <span class="a-content1">火凤凰CRM普及版是火凤凰CRM系统为了让CRM广大爱好...</span><br/>
+                                        <span class="a-content2">已有 0 评价</span>
+                                    </dd>
+                                </dl>
+                                <dl style="border: none;">
+                                    <dt><img src="../images/new5.gif"></dt>
+                                    <dd>
+                                        <span class="a-content">BigAntOffice企业协同办公软件</span><br/>
+                                        <span class="a-word">免费</span><br/>
+                                        <span class="a-content1">BigAnt Office 是在BigAnt Messa...</span><br/>
+                                        <span class="a-content2">已有 0 评价</span>
+                                    </dd>
+                                </dl>
+                            </div>
+                        </div>
+                        <div class="one" id="two" hidden>
+                            <div id="icon1"></div>
+                            <div class="icon-content">
+                                <dl>
+                                    <dt><img src="../images/pop.png"></dt>
+                                    <dd>
+                                        <span class="a-content">格瑞趋势数据库版本控制</span><br/>
+                                        <span class="a-word">免费</span><br/>
+                                        <span class="a-content1">Source Safe for SQL Server是一...</span><br/>
+                                        <span class="a-content2">已有 0 评价</span>
+                                    </dd>
+                                </dl>
+                                <dl>
+                                    <dt><img src="../images/pop.png"></dt>
+                                    <dd>
+                                        <span class="a-content">格瑞趋势数据库诊断专家</span><br/>
+                                        <span class="a-word">免费 </span><br/>
+                                        <span class="a-content1">Expert for SQL Server从服务器软硬件...</span><br/>
+                                        <span class="a-content2">已有 0 评价</span>
+                                    </dd>
+                                </dl>
+                                <dl>
+                                    <dt><img src="../images/pop.png"></dt>
+                                    <dd>
+                                        <span class="a-content">伙伴云表格</span><br/>
+                                        <span class="a-word">免费</span><br/>
+                                        <span class="a-content1">伙伴云表格，快速实现Excel数据文件的云端化，一分钟平...</span><br/>
+                                        <span class="a-content2">已有 0 评价</span>
+                                    </dd>
+                                </dl>
+                                <dl>
+                                    <dt><img src="../images/pop.png"></dt>
+                                    <dd>
+                                        <span class="a-content">火凤凰CRM系统普及版</span><br/>
+                                        <span class="a-word">免费</span><br/>
+                                        <span class="a-content1">火凤凰CRM普及版是火凤凰CRM系统为了让CRM广大爱好...</span><br/>
+                                        <span class="a-content2">已有 0 评价</span>
+                                    </dd>
+                                </dl>
+                                <dl style="border: none;">
+                                    <dt><img src="../images/pop.png"></dt>
+                                    <dd>
+                                        <span class="a-content">BigAntOffice企业协同办公软件</span><br/>
+                                        <span class="a-word">免费</span><br/>
+                                        <span class="a-content1">BigAnt Office 是在BigAnt Messa...</span><br/>
+                                        <span class="a-content2">已有 0 评价</span>
+                                    </dd>
+                                </dl>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="part4">
+                        <div id="left">
+                            <h1>免费预约顾问</h1>
+                            <p>急速匹配服务商</p>
+                            <hr/>
+                            <p>看演示&nbsp;&nbsp;比品质&nbsp;&nbsp;比保障&nbsp;&nbsp;比价格</p>
+                            <form action="#" method="post">
+                                <input type="text" placeholder="您的称呼" required/><br/>
+                                <input type="tel" placeholder="您的电话" required/><br/>
+                                <input type="text" placeholder="您需要什么" required/><br/>
+                                <input type="submit" value="提交"/>
+                            </form>
+                            <div id="san"></div>
+                        </div>
+                        <div id="right">
+                            <h2>一对一贴心沟通，服务过程全保障</h2>
+                            <div class="right-content" style="border-bottom: 1px solid #ccc;">
+                                <dl>
+                                    <dt><img src="../images/server1.gif"/></dt>
+                                    <dd>
+                                        <span class="words">微软云专家</span><br/>
+                                        <span class="num">已有 <span class="gr">23</span>人咨询</span><br/>
+                                        <a href="javascript:void(0);">免费预约</a>
+                                    </dd>
+                                </dl>
+                                <dl>
+                                    <dt><img src="../images/server2.gif"/></dt>
+                                    <dd>
+                                        <span class="words">OA专家</span><br/>
+                                        <span class="num">已有 <span class="gr">81</span>人咨询</span><br/>
+                                        <a href="javascript:void(0);">免费预约</a>
+                                    </dd>
+                                </dl>
+                            </div>
+                            <div class="right-content">
+                                <dl style="margin-top: 40px;">
+                                    <dt><img src="../images/server3.gif"/></dt>
+                                    <dd>
+                                        <span class="words">高级架构师</span><br/>
+                                        <span class="num">已有 <span class="gr">56</span>人咨询</span><br/>
+                                        <a href="javascript:void(0);">免费预约</a>
+                                    </dd>
+                                </dl>
+                                <dl style="margin-top: 40px;">
+                                    <dt><img src="../images/server4.gif"/></dt>
+                                    <dd>
+                                        <span class="words">ERP专家</span><br/>
+                                        <span class="num">已有<span class="gr">67</span>人咨询</span><br/>
+                                        <a href="javascript:void(0);">免费预约</a>
+                                    </dd>
+                                </dl>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="side">
+                    <div class="side-content">
+                        <div class="move">
+                            <img src="../images/qq.gif"/><br/>
+                            在线咨询
+                        </div>
+                    </div>
+                    <div class="side-content">
+                        <div id="img"></div>
+                        <div class="move">
+                            <img src="../images/erweima.gif"/><br/>
+                            扫码关注
+                        </div>
+                    </div>
+                    <div class="side-content">
+                        <div class="move">
+                            <img src="../images/idea.gif"/><br/>
+                            意见反馈
+                        </div>
+                    </div>
+                    <div class="side-content">
+                        <div id="img1"></div>
+                        <div class="move">
+                            <img src="../images/app.gif"/><br/>
+                            APP下载
+                        </div>
+                    </div>
+                    <div class="side-content" id="side-hide" hidden>
+                        <img src="../images/up.gif"/>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div id="foot">
+            <div id="foot-left">
+                <img src="../images/title.gif"/><br/>
+                <img src="../images/num.gif"/>
+            </div>
+            <div id="foot-right">
+                <p>
+                    <span>交易指南</span>
+                    <span>关于软积木</span>
+                    <span>服务保障</span>
+                    <span>帮助指南</span>
+                    <span>软积木微信</span>
+                </p>
+                <hr/>
+                <table>
+                    <tr>
+                        <td><a herf="javascript:void(0);">订单查询</a></td>
+                        <td><a herf="javascript:void(0);">关于我们</a></td>
+                        <td><a herf="javascript:void(0);">联系我们</a></td>
+                        <td><a herf="javascript:void(0);">常见问题</a></td>
+                        <td rowspan="3"><img src="../images/weixin.gif"/></td>
+                    </tr>
+                    <tr>
+                        <td><a herf="javascript:void(0);">支付方式</a></td>
+                        <td><a herf="javascript:void(0);">合作伙伴</a></td>
+                        <td><a herf="javascript:void(0);">售后服务</a></td>
+                        <td><a herf="javascript:void(0);">意见反馈</a></td>
+                    </tr>
+                    <tr>
+                        <td><a herf="javascript:void(0);">上传要求</a></td>
+                        <td><a herf="javascript:void(0);">网站条例</a></td>
+                        <td><a herf="javascript:void(0);"></a></td>
+                        <td><a herf="javascript:void(0);"></a></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </footer>
+</div>
+</body>
+</html>

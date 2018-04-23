@@ -1,0 +1,826 @@
+/*最大的盒子*/
+#contain{
+    width: 100%;
+    height: 100%;
+}
+/*头部导航*/
+#contain nav{
+    width: 100%;
+    height: 70px;
+    background-color: #fefefe;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    opacity: 0.9;
+}
+#contain nav #nav-content{
+    width: 1200px;
+    height: 70px;
+    margin: 0px auto;
+    position: relative;
+}
+/*头部图标*/
+#contain nav #nav-content img{
+    padding-top: 8px;
+    vertical-align: middle;
+    cursor: pointer;
+}
+/*头部菜单*/
+#contain nav #nav-content span{
+    font-size: 16px;
+    font-weight: bold;
+    display: inline-block;
+    color: #626262;
+    height: 57px;
+    line-height: 57px;
+    margin-left: 45px;
+    position: relative;
+}
+#contain nav #nav-content span:nth-child(2){
+    color: #59b574;
+}
+/*菜单悬浮样式*/
+#contain nav #nav-content span:hover{
+    cursor: pointer;
+    color:#59b574 ;
+}
+#contain nav #nav-content span:hover .scroll{
+    transform: scale(1);
+    transition: all 1s;
+}
+/*菜单下隐藏的盒子样式*/
+#contain nav #nav-content span .scroll{
+    position: absolute;
+    width: 60px;
+    height: 4px;
+    background-color: #33AE6C;
+    left:-15px ;
+    bottom: -7px;
+    transform: scale(0);
+    transform-origin: left;
+}
+#contain nav #nav-content span:nth-child(4) .scroll{
+    width: 100px;
+}
+#contain nav #nav-content span:nth-child(5) .scroll{
+    width: 100px;
+}
+#contain nav #nav-content span:nth-child(6) .scroll{
+    width: 80px;
+}
+/*分类悬浮样式*/
+#contain nav #nav-content .move #hide{
+    width: 300px;
+    height: 460px;
+    position: absolute;
+    left:-20px;
+    top: 60px;
+    z-index: 2;
+    border: 1px solid #ccc;
+}
+#contain nav #nav-content .move #hide #icons{
+    width: 15px;
+    height: 15px;
+    border: 1px solid #ccc;
+    position: absolute;
+    left: 30px;
+    top:-8px;
+    transform: rotate(45deg);
+    background-color: white;
+    z-index: 1;
+}
+#contain nav #nav-content .move #hide #hide-content{
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 298px;
+    height:458px;
+    background-color: white;
+    z-index: 3;
+}
+#contain nav #nav-content .move #hide #hide-content .hide-one{
+    width: 280px;
+    height: 130px;
+    margin-left: 10px;
+    border-bottom: 1px solid #ccc;
+}
+#contain nav #nav-content .move #hide #hide-content .hide-one p{
+    font-size: 14px;
+    color: #33AE6C;
+    height: 30px;
+    line-height: 30px;
+    margin: 0px;
+}
+#contain nav #nav-content .move #hide #hide-content .hide-one a{
+    text-decoration: none;
+    font-size: 12px;
+    color: #333;
+    height: 30px;
+    line-height: 30px;
+    display: block;
+    float: left;
+    width: 60px;
+    text-align: center;
+    margin: 0px;
+    margin-right: 8px;
+}
+#contain nav #nav-content .move #hide #hide-content .hide-one a:hover{
+    color: #33AE6C;
+    text-decoration: underline;
+}
+/*头部搜索样式*/
+#contain nav #nav-content input{
+    width: 150px;
+    height: 40px;
+    border-radius: 20px;
+    position: absolute;
+    right: 190px;
+    top: 12px;
+    transform-origin: right;
+    border: 1px solid #ccc;
+    outline: none;
+}
+#contain nav #nav-content #sousuo{
+    width: 16px;
+    height: 18px;
+    position: absolute;
+    right: 205px;
+    top:24px;
+    background-image: url("../images/header-icon.png");
+    background-repeat: no-repeat;
+    background-position: -38px;
+}
+/*注册 登录样式*/
+#contain nav #nav-content a{
+    display: block;
+    width: 80px;
+    height: 40px;
+    line-height: 40px;
+    text-decoration: none;
+}
+/*注册样式*/
+#contain nav #nav-content .first{
+    background-color: #59B574;
+    color: white;
+    font-size: 14px;
+    position: absolute;
+    top: 15px;
+    right:95px ;
+    text-indent: 2em;
+    border-radius: 5px;
+}
+#contain nav #nav-content .first:hover{
+    background-color: #2D9E5E;
+}
+#contain nav #nav-content .first #book{
+    width: 12px;
+    height: 18px;
+    background-image: url("../images/header-icon.png");
+    background-repeat: no-repeat;
+    background-position: -21px;
+    position: absolute;
+    left: 8px;
+    top:11px;
+}
+/*登录样式*/
+#contain nav #nav-content .second{
+    background-color: white;
+    color: #33AE6C;
+    font-size: 14px;
+    position: absolute;
+    right: 5px;
+    top: 15px;
+    background-image: url("../images/login.jpg");
+    background-repeat: no-repeat;
+    background-position: 10px 12px;
+    text-indent: 2.5em;
+    border-radius: 5px;
+    border: 1px solid white;
+}
+#contain nav #nav-content .second:hover{
+    border: 1px solid #33AE6C;
+}
+/*总体内容*/
+#total{
+    width: 100%;
+    height: 2350px;
+    background-color: #f5f5f5;
+}
+#total #total-content{
+    width: 1200px;
+    height: 2350px;
+    margin: 0px auto;
+}
+/*banner图样式*/
+#banner{
+    width: 100%;
+    height: 400px;
+    background-image: url("../images/bg.jpg");
+    margin-top: 70px;
+}
+#banner #kong{
+    width: 1200px;
+    height: 400px;
+    margin: 0px auto;
+    position: relative;
+}
+#banner #banner-content{
+    width: 1200px;
+    height: 200px;
+    margin: 100px auto;
+    position: absolute;
+    left: 0px;
+    top: 10px;
+}
+#banner #banner-content h1{
+    color: white;
+    text-align: center;
+}
+#banner #banner-content p{
+    text-align: center;
+    height: 50px;
+    margin-top: -5px;
+}
+#banner #banner-content p a{
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    padding-right: 20px;
+    line-height: 50px;
+    height: 50px;
+}
+#banner #banner-content p a:hover{
+    opacity: 0.8;
+}
+#banner #banner-content input{
+     width: 500px;
+     height: 60px;
+    position: absolute;
+    left:300px;
+    bottom: 0px;
+}
+#banner #banner-content #a{
+    display: inline-block;
+    height: 60px;
+    line-height: 60px;
+    width: 90px;
+    background-color: #33AE6C;
+    position: absolute;
+    right: 310px;
+    bottom: 0px;
+    background-image: url("../images/1.png");
+    background-repeat: no-repeat;
+}
+#banner #banner-content #a:hover{
+    background-color:#2D9E5E ;
+    background-image: url("../images/2.png");
+    background-repeat: no-repeat;
+}
+/*主体内容部分样式*/
+#main{
+    width: 100%;
+}
+#main #main-content{
+    width: 1200px;
+    height: 1870px;
+    margin: 0px auto;
+}
+/*第一部分*/
+#main #main-content #part1{
+    width: 1198px;
+    height: 330px;
+    margin: 30px auto;
+    background-color: white;
+    border: 1px solid #ccc;
+}
+#main #main-content #part1 img{
+    border-bottom: 1px solid #ccc;
+}
+#main #main-content #part1 h1{
+    padding-left: 20px;
+    color: #333;
+}
+#main #main-content #part1  a{
+    text-decoration: none;
+    display: inline-block;
+    height: 50px;
+    line-height: 50px;
+    border: 1px solid #ccc;
+    color: #333;
+    width: 100px;
+    text-align: center;
+    margin-left: 24px;
+    margin-bottom: 20px;
+    position: relative;
+}
+#main #main-content #part1  a:hover{
+    color: #33AE6C;
+    border-color: #33AE6C !important;
+}
+#main #main-content #part1  #more{
+    background-color: #c0c0c0;
+    position: relative;
+}
+#main #main-content #part1  #more:hover{
+    background-color: #dcdcdc;
+    color: #333;
+    border: none;
+}
+#main #main-content #part1  #sure{
+    color: white;
+    background-color: #33AE6C;
+    position: relative;
+}
+#main #main-content #part1  #sure:hover{
+    background-color: #2D9E5E;
+    border: none;
+}
+#main #main-content #part1  a .tu{
+    width:20px;
+    height: 20px;
+    position: absolute;
+    right: -10px;
+    bottom: -10px;
+    border-radius: 10px;
+    background-color: #2D9E5E;
+    line-height: 20px;
+    color: white;
+    font-weight: bold;
+}
+/*第二部分*/
+#main #main-content #part2{
+    width: 1198px;
+    height: 460px;
+    margin: 30px auto;
+    background-color: white;
+    border: 1px solid #ccc;
+    overflow: auto;
+}
+#main #main-content #part2 h2{
+    height: 30px;
+    color: #333;
+    padding-left: 20px;
+    position: relative;
+}
+#main #main-content #part2 h2 a{
+    display: inline-block;
+    text-decoration: none;
+    width: 80px;
+    height: 30px;
+    line-height: 30px;
+    font-size: 14px;
+    color: #333;
+    background-image: url("../images/jingpin.gif");
+    background-repeat: no-repeat;
+    background-position:8px 5px ;
+    position: absolute;
+    right: 20px;
+    text-indent: 2em;
+}
+#main #main-content #part2 h2 a:hover{
+    color: #33AE6C;
+}
+#main #main-content #part2 dl{
+    float: left;
+    width: 276px;
+    height: 350px;
+    margin-left: 18px;
+    border: 1px solid white;
+}
+#main #main-content #part2 dl:hover{
+    transform: translateY(-10px);
+    box-shadow: 1px 1px 5px #ccc;
+    border: 1px solid #ccc;
+    transition: all 1s;
+}
+#main #main-content #part2 dl:hover a{
+    color: #2D9E5E;
+}
+#main #main-content #part2 dl:hover .word{
+    color: #333;
+}
+#main #main-content #part2 dl dd{
+    padding-top: 15px;
+}
+#main #main-content #part2 dl dd a{
+    display: inline-block;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+    color: #33AE6C;
+    padding-bottom: 15px;
+}
+#main #main-content #part2 dl dd .word{
+    color: #ccc;
+    font-size: 12px;
+}
+#main #main-content #part2 dl dd p .right{
+    color: #ccc;
+    font-size: 12px;
+    padding-left: 95px;
+}
+#main #main-content #part2 dl dd p span{
+    color:#33AE6C ;
+    font-size: 12px;
+}
+/*第三部分*/
+#main #main-content #part3{
+    width: 1200px;
+    height: 489px;
+    border: 1px solid #ccc;
+    margin: 30px auto;
+    position: relative;
+    overflow: auto;
+    background-color: white;
+}
+#main #main-content #part3 p{
+    height: 50px;
+    margin-top: 0px;
+    position: relative;
+}
+#main #main-content #part3 p a{
+    display: inline-block;
+    height: 50px;
+    line-height: 50px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #333;
+    padding-left: 30px;
+}
+#main #main-content #part3 p a:first-child{
+    color: #33AE6C;
+}
+#main #main-content #part3 p a:last-child{
+    color: #333;
+    font-size: 14px;
+    position: absolute;
+    right: 30px;
+}
+#main #main-content #part3 p a:last-child:hover{
+    color: #33AE6C;
+}
+#main #main-content #part3 .one{
+    width: 1198px;
+    height: 437px;
+    border-top: 1px solid #ccc;
+    position: absolute;
+    left: 0px;
+    top: 50px;
+    z-index: 2;
+}
+#main #main-content #part3 .one #icon{
+    width: 15px;
+    height: 15px;
+    border: 1px solid #33AE6C;
+    position: absolute;
+    left:60px;
+    top: -9px;
+    transform: rotate(45deg);
+    background-color:#33AE6C;
+    z-index: 1;
+}
+#main #main-content #part3 .one #icon1{
+    width: 15px;
+    height: 15px;
+    border: 1px solid #33AE6C;
+    position: absolute;
+    left: 175px;
+    top: -9px;
+    transform: rotate(45deg);
+    background-color:#33AE6C;
+    z-index: 1;
+}
+#main #main-content #part3 .one .icon-content{
+    width: 1195px;
+    height: 435px;
+    position: absolute;
+    left: 0px;
+    top: 0;
+    z-index: 3;
+    overflow: hidden;
+}
+#main #main-content #part3 .one .icon-content dl{
+    width: 238px;
+    height: 435px;
+    float: left;
+    border-right: 1px solid #ccc;
+    margin-top: 0px;
+    background-color: white;
+}
+#main #main-content #part3 .one .icon-content dl dt{
+    border: 1px solid #ccc;
+    width: 200px;
+    height: 200px;
+    margin-left: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+#main #main-content #part3 .one .icon-content dl dt img{
+    padding-left: 8px;
+}
+#main #main-content #part3 .one .icon-content dl span:first-child{
+    color: #333;
+    font-size: 14px;
+    display: inline-block;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+#main #main-content #part3 .one .icon-content dl dd .a-content1{
+    font-size: 12px;
+    color: #ccc;
+    display: inline-block;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+#main #main-content #part3 .one .icon-content dl span:last-child {
+    color: #333;
+    font-size: 12px;
+    display: inline-block;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+#main #main-content #part3 .one .icon-content dl dd .a-num{
+    font-size: 16px;
+    color: #F9671E;
+}
+#main #main-content #part3 .one .icon-content dl dd .a-word{
+    color: #33AE6C;
+    font-size: 16px;
+}
+#main #main-content #part3 .one .icon-content dl:hover dt{
+    transform: scale(1.1);
+    transition: all 1s;
+    background-color: white;
+}
+#main #main-content #part3 .one .icon-content dl:hover{
+    background-color: #fafafa;
+}
+#main #main-content #part3 .one .icon-content dl:hover .a-content{
+    color: #33AE6C;
+}
+#main #main-content #part3 .one .icon-content dl:hover .a-content1{
+    color: #333;
+}
+/*第四部分*/
+#main #main-content #part4{
+    width: 1198px;
+    height: 500px;
+    margin: 30px auto;
+    position: relative;
+}
+/*第四部分左边*/
+#main #main-content #part4 #left{
+    width: 400px;
+    height: 500px;
+    border: 1px solid #ccc;
+    background-color: white;
+    position: relative;
+}
+#main #main-content #part4 #left h1{
+    text-align: center;
+    color: #333;
+}
+#main #main-content #part4 #left p{
+    text-align: center;
+    color: #333;
+}
+#main #main-content #part4 #left input{
+    width: 360px;
+    height: 50px;
+    margin-left: 20px;
+    margin-top: 20px;
+    outline: none;
+}
+#main #main-content #part4 #left input:not([type="submit"]):focus{
+    border: 1px solid #33AE6C;
+    outline: none;
+}
+#main #main-content #part4 #left input[type="submit"]{
+    background-color: white;
+    color: #33AE6C;
+    outline: none;
+    border: 1px solid #33AE6C;
+}
+#main #main-content #part4 #left #san{
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    width: 0px;
+    height: 0px;
+    border-top: 30px solid green;
+    border-right: 50px solid green;
+    border-bottom: 30px solid white;
+    border-left: 50px solid white;
+}
+/*第四部分右边*/
+#main #main-content #part4 #right{
+    width: 750px;
+    height: 500px;
+    border: 1px solid #ccc;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    background-color: white;
+}
+#main #main-content #part4 #right h2{
+    color: #333;
+    text-align: center;
+}
+#main #main-content #part4 #right .right-content{
+    width: 710px;
+    height: 200px;
+    margin-left: 20px;
+}
+#main #main-content #part4 #right dl{
+    float: left;
+    width: 300px;
+    height: 150px;
+    margin-left: 25px;
+}
+#main #main-content #part4 #right dl dt{
+    float: left;
+    width: 166px;
+    height: 150px;
+}
+#main #main-content #part4 #right dl dt img{
+    padding-top: 12px;
+}
+#main #main-content #part4 #right dl dd{
+    margin-left: 10px;
+    width: 120px;
+    float: left;
+    height: 150px;
+}
+#main #main-content #part4 #right dl dd .words{
+    color: #333;
+    font-size: 14px;
+    margin-top: 20px;
+    margin-bottom: 8px;
+    height: 20px;
+    display: inline-block;
+}
+#main #main-content #part4 #right dl dd .num{
+    color: #ccc;
+    font-size: 14px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    height: 20px;
+    display: inline-block;
+}
+#main #main-content #part4 #right dl dd .num .gr{
+    color: #33AE6C;
+}
+#main #main-content #part4 #right dl dd a{
+    height: 30px;
+    line-height: 30px;
+    display: inline-block;
+    width: 100px;
+    text-align: center;
+    text-decoration: none;
+    background-color: #33AE6C;
+    color: white;
+    font-size: 14px;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+#main #main-content #part4 #right dl dd a:hover{
+    background-color: #2D9E5E;
+}
+/*侧边服务样式*/
+#side{
+    z-index: 50;
+    width:60px;
+    height: 300px;
+    position: fixed;
+    right: 0;
+    top:30%;
+}
+#side .side-content{
+    width: 60px;
+    height: 48px;
+    border: 1px solid #ccc;
+    overflow: hidden;
+    margin-bottom: 5px;
+    background-color: white;
+}
+#side .side-content .move{
+    color: #33AE6C;
+    font-size: 20px;
+    text-align: center;
+    height: 48px;
+}
+#side .side-content:hover .move{
+    transform: translateY(-48px);
+    transition: all 1s;
+}
+#side .side-content .move img{
+    padding-top: 9px;
+}
+#side .side-content #img{
+    position: absolute;
+    right: 70px;
+    top: -2px;
+    width: 110px;
+    height: 110px;
+    background-image: url("../images/weixin.gif");
+    background-repeat: no-repeat;
+    background-position: 6px 6px;
+    border: 1px solid #555;
+    transform: scale(0);
+    transform-origin: 150% 80%;
+}
+#side .side-content:nth-child(2):hover #img{
+    transform: scale(1);
+    transition: all 1s;
+}
+#side .side-content #img1{
+    position: absolute;
+    right: 70px;
+    top:110px;
+    width:110px;
+    height: 110px;
+    background-image: url("../images/weixin.gif");
+    background-repeat: no-repeat;
+    background-position: 6px 6px;
+    border: 1px solid #555;
+    transform: scale(0);
+    transform-origin: 150% 80%;
+}
+#side .side-content:nth-child(4):hover #img1{
+    transform: scale(1);
+    transition: all 1s;
+}
+#side .side-content:last-child{
+    text-align: center;
+    margin-top: 15px;
+}
+#side .side-content:last-child img{
+    padding-top: 9px;
+}
+/*底部样式*/
+footer{
+    width: 100%;
+    height: 240px;
+    border-top: 3px solid #33AE6C;
+    border-bottom: 1px solid #ccc;
+}
+footer #foot{
+    width: 1200px;
+    height: 240px;
+    margin: 0px auto;
+    background-color: white;
+    position: relative;
+}
+footer #foot #foot-left{
+    width: 300px;
+    height: 240px;
+}
+footer #foot #foot-left img{
+    padding-left: 80px;
+    padding-top: 50px;
+}
+footer #foot #foot-right{
+    width:800px;
+    height: 240px;
+    position: absolute;
+    left: 370px;
+    top: 0px;
+}
+footer #foot #foot-right p span{
+    font-size: 14px;
+    color: #555;
+    padding-right: 90px;
+}
+footer #foot #foot-right p span:first-child{
+    padding-left: 30px;
+}
+footer #foot #foot-right p span:last-child{
+    padding-right: 0px;
+}
+footer #foot #foot-right table{
+    width: 800px;
+    margin-top: 30px;
+}
+footer #foot #foot-right table tr{
+    height: 30px;
+}
+footer #foot #foot-right table tr td{
+    width: 160px;
+}
+footer #foot #foot-right table tr td a{
+    text-decoration: none;
+    font-size: 14px;
+    color: #ccc;
+    display: inline-block;
+    height: 30px;
+    line-height: 30px;
+    background-image: url("../images/icon.gif");
+    background-repeat: no-repeat;
+    background-position: 35px 12px;
+    text-indent: 3em;
+}
+footer #foot #foot-right table tr td img{
+    padding-left: 20px;
+}
